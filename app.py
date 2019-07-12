@@ -16,6 +16,7 @@
 #            }
 # print(student['exams']['final'])
 
+
 def create_student():
     """Ask the user for the student's name
     Create the dictionary
@@ -25,5 +26,32 @@ def create_student():
                'marks': []}
     return student
 
-print(create_student())
 
+#print(create_student())
+
+
+#my_list = create_student()
+#my_list['marks'].append(5)
+#print(my_list['marks'])
+
+s = create_student()
+
+
+def add_mark(student, mark):
+    """
+    Append a mark to the student dictionary
+    :param student:
+    :param mark:
+    :return:
+    """
+    student['marks'].append(mark)
+    return None
+
+
+#add_mark(s, 5) #Passing by reference
+#print(s)
+
+import numpy as np
+
+def calculate_average_mark(student):
+    pass
